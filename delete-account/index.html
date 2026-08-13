@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Squarely — Delete your account</title>
+<meta name="description" content="How to delete your Squarely account and what data is removed or kept.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #16181c; --muted: #60646c; --line: #e0e1e6;
+    --accent: #0E4F45; --chip: #f4f5f7; --warn-bg: #FDF4E7; --warn-line: #E8C48A; --warn-fg: #6B4A12;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #101214; --fg: #ecedee; --muted: #a1a5ab; --line: #2a2d31;
+            --accent: #8AEAD6; --chip: #191c1f; --warn-bg: #241C0E; --warn-line: #5C4620; --warn-fg: #E8C48A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 40px 20px 72px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 28px; }
+  .mark { width: 40px; height: 40px; flex: none; }
+  .brand { font-weight: 700; font-size: 18px; }
+  h1 { font-size: 30px; line-height: 1.25; margin: 0 0 6px; letter-spacing: -0.02em; }
+  .sub { color: var(--muted); margin: 0 0 28px; }
+  h2 { font-size: 20px; margin: 34px 0 10px; padding-top: 18px; border-top: 1px solid var(--line); }
+  p { margin: 0 0 14px; }
+  ol, ul { margin: 0 0 14px; padding-left: 24px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  code { background: var(--chip); padding: 1px 5px; border-radius: 5px; font-size: 92%; }
+  .steps { background: var(--chip); border: 1px solid var(--line); border-radius: 12px;
+           padding: 18px 18px 6px; }
+  .note { background: var(--warn-bg); border: 1px solid var(--warn-line); color: var(--warn-fg);
+          border-radius: 12px; padding: 14px 16px; margin: 0 0 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 0 0 16px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 13px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <svg class="mark" viewBox="0 0 1024 1024" aria-hidden="true">
+    <rect width="1024" height="1024" rx="230" fill="#0E4F45"/>
+    <path d="M512,212 A300,300 0 0,0 512,812 Z" fill="#1CC29F" transform="translate(-26,-34)"/>
+    <path d="M512,212 A300,300 0 0,1 512,812 Z" fill="#8AEAD6" transform="translate(26,34)"/>
+  </svg>
+  <span class="brand">Squarely</span>
+</header>
+
+<h1>Delete your Squarely account</h1>
+<p class="sub">Squarely is a shared-expense tracker published by Nazmus Sakib. This page explains how
+to delete your account and exactly what is removed.</p>
+
+<h2>Delete it yourself, in the app</h2>
+<div class="steps">
+  <ol>
+    <li>Open <strong>Squarely</strong> and sign in.</li>
+    <li>Tap the <strong>Account</strong> tab (bottom right).</li>
+    <li>Scroll to <strong>Danger zone</strong>.</li>
+    <li>Tap <strong>Delete account</strong>.</li>
+    <li>Read the summary, type <code>DELETE</code> to confirm, and tap
+        <strong>Delete my account</strong>.</li>
+  </ol>
+</div>
+<p>Your account is deleted immediately and you are signed out. You will not be able to sign in again.</p>
+
+<div class="note">
+  <strong>Settle up first.</strong> If you still owe money to someone, or someone owes you, Squarely
+  will refuse the deletion and show you the outstanding amounts. This protects the other people you
+  share expenses with, whose balances are calculated from your shared records. Record the payments to
+  bring every balance to zero, then delete.
+</div>
+
+<h2>Request deletion by email</h2>
+<p>If you cannot access the app, email
+<a href="mailto:sakibkuet16@gmail.com?subject=Squarely%20account%20deletion%20request">sakibkuet16@gmail.com</a>
+from the address registered to your account, with the subject
+“Squarely account deletion request”. We will verify ownership and delete the account within 30 days.</p>
+
+<h2>What is deleted and what is kept</h2>
+<table>
+  <thead><tr><th>Data</th><th>What happens</th></tr></thead>
+  <tbody>
+    <tr><td>Name, email address, profile photo</td><td><strong>Deleted</strong></td></tr>
+    <tr><td>Sign-in credentials (password)</td><td><strong>Deleted</strong> — you can no longer log in</td></tr>
+    <tr><td>Friend connections and group memberships</td><td><strong>Deleted</strong></td></tr>
+    <tr><td>Notifications and registered devices (push tokens)</td><td><strong>Deleted</strong></td></tr>
+    <tr><td>Recurring expense templates you created</td><td><strong>Deleted</strong></td></tr>
+    <tr><td>Expenses and settlements you shared with other people</td><td><strong>Kept</strong>, with your
+        name replaced by “Deleted user”</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Why some records are kept.</strong> A shared expense belongs to everyone on it. Other
+members' balances are calculated from those rows, so deleting them would silently change what your
+friends believe they owe each other. Those retained records carry no personal identifiers after
+deletion — your name, email and photo are removed, and the entry shows only “Deleted user”.</p>
+
+<h2>Retention period</h2>
+<p>Personal data is removed immediately when the account is deleted. Encrypted database backups may
+still contain it for up to <strong>30 days</strong> before they rotate out, after which no copy
+remains. The anonymised shared expense records described above are kept indefinitely, because other
+users' balances depend on them.</p>
+
+<footer>
+  Squarely · published by Nazmus Sakib ·
+  <a href="../">Privacy policy</a> ·
+  <a href="mailto:sakibkuet16@gmail.com">sakibkuet16@gmail.com</a>
+</footer>
+</div>
+</body>
+</html>
