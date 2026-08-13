@@ -1,8 +1,8 @@
-# Owely Privacy Policy
+# Squarely Privacy Policy
 
 **Last updated: 13 August 2026**
 
-Owely ("the app") helps you record shared expenses with friends, roommates and
+Squarely ("the app") helps you record shared expenses with friends, roommates and
 groups, and shows who owes whom. This policy explains what the app collects, why,
 and what control you have.
 
